@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ATM Machine | Laraib Zia</title>
+
+    <!-- Google Font -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="atm-card">
+
+            <!-- ================= HEADER ================= -->
+
+            <div class="header">
+
+                <i class="fa-solid fa-building-columns bank-icon"></i>
+
+                <h1>ATM Machine</h1>
+
+                <p>Secure Banking Experience</p>
+
+            </div>
+
+
+
+            <!-- ================= LOGIN ================= -->
+
+            <div id="login-section">
+
+                <div class="avatar">
+
+                    <i class="fa-solid fa-user"></i>
+
+                </div>
+
+                <h2>Enter Your 4-Digit PIN</h2>
+
+                <div class="input-box">
+
+                    <i class="fa-solid fa-lock"></i>
+
+                    <input
+                        type="password"
+                        id="pin"
+                        placeholder="Enter Your PIN"
+                        maxlength="4">
+
+                    <i class="fa-solid fa-eye eye-icon" id="togglePassword"></i>
+
+                </div>
+
+                <button id="loginBtn">
+
+                    <i class="fa-solid fa-right-to-bracket"></i>
+
+                    Login
+
+                </button>
+
+                <p id="login-message"></p>
+
+            </div>
+
+
+
+            <!-- ================= DASHBOARD ================= -->
+
+            <div id="dashboard">
+
+                <div class="welcome">
+
+                    <h2 id="welcomeText">
+
+                        Welcome Back 👋
+
+                    </h2>
+
+                    <p id="welcomeSubText">
+
+                        Secure Banking Dashboard
+
+                    </p>
+
+                </div>
+
+
+<div class="atm-bank-card">
+
+    <div class="card-top">
+
+        <h3>LARAIB BANK</h3>
+
+        <i class="fa-solid fa-wifi"></i>
+
+    </div>
+
+    <div class="card-chip">
+
+        <i class="fa-solid fa-microchip"></i>
+
+    </div>
+
+    <div class="card-number">
+
+        **** **** **** 5678
+
+    </div>
+
+    <div class="card-bottom">
+
+        <div>
+
+            <span>Card Holder</span>
+
+            <h4>Laraib Zia</h4>
+
+        </div>
+
+        <div>
+
+            <span>Valid Thru</span>
+
+            <h4>12/30</h4>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+                <!-- Balance Card -->
+
+                <div class="balance-card">
+
+                    <p>Available Balance</p>
+
+                    <h1 id="balance">
+
+                        PKR 200,000
+
+                    </h1>
+
+                </div>
+
+
+
+                <!-- Amount -->
+
+                <div class="amount-box">
+
+                    <input
+                        type="number"
+                        id="amount"
+                        placeholder="Enter Amount">
+
+                </div>
+
+
+
+                <!-- Buttons -->
+
+                <div class="buttons">
+
+                    <button id="depositBtn">
+
+                        <i class="fa-solid fa-money-bill-trend-up"></i>
+
+                        Deposit
+
+                    </button>
+
+
+
+                    <button id="withdrawBtn">
+
+                        <i class="fa-solid fa-money-bill-transfer"></i>
+
+                        Withdraw
+
+                    </button>
+
+
+
+                    <button id="balanceBtn">
+
+                        <i class="fa-solid fa-wallet"></i>
+
+                        Check Balance
+
+                    </button>
+
+
+
+                    <button id="historyBtn">
+
+                        <i class="fa-solid fa-clock-rotate-left"></i>
+
+                        History
+
+                    </button>
+
+
+
+                    <button id="logoutBtn">
+
+                        <i class="fa-solid fa-right-from-bracket"></i>
+
+                        Logout
+
+                    </button>
+
+                </div>
+
+
+
+                <!-- History -->
+
+                <div id="history">
+
+                    <h3>
+
+                        Recent Transactions
+
+                    </h3>
+
+                    <ul id="history-list"></ul>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================= FOOTER ================= -->
+
+            <div class="footer">
+
+                <p>
+
+                    © 2026 | Designed & Developed by
+
+                    <strong>Laraib Zia</strong>
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+<!-- Notification -->
+
+<div id="toast"></div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

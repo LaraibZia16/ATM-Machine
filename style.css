@@ -1,0 +1,569 @@
+/* ===========================
+   GOOGLE FONT & RESET
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:20px;
+
+    background:
+    linear-gradient(135deg,#17092f,#462255,#6d3bd1);
+
+}
+
+
+/* ===========================
+      MAIN CONTAINER
+=========================== */
+
+.container{
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+
+/* ===========================
+        ATM CARD
+=========================== */
+
+.atm-card{
+
+    width:100%;
+
+    max-width:470px;
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(15px);
+
+    border-radius:25px;
+
+    padding:35px;
+
+    color:white;
+
+    border:1px solid rgba(255,255,255,.12);
+
+    box-shadow:
+    0 15px 35px rgba(0,0,0,.35);
+
+}
+
+
+/* ===========================
+          HEADER
+=========================== */
+
+.header{
+
+    text-align:center;
+
+    margin-bottom:30px;
+
+}
+
+.bank-icon{
+
+    font-size:50px;
+
+    color:#FFD54F;
+
+    margin-bottom:10px;
+
+}
+
+.header h1{
+
+    font-size:34px;
+
+    margin-bottom:8px;
+
+}
+
+.header p{
+
+    color:#d6d6d6;
+
+}
+
+
+/* ===========================
+         USER AVATAR
+=========================== */
+
+.avatar{
+
+    width:90px;
+
+    height:90px;
+
+    border-radius:50%;
+
+    background:white;
+
+    margin:0 auto 25px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.avatar i{
+
+    font-size:38px;
+
+    color:#6d3bd1;
+
+}
+
+
+/* ===========================
+       LOGIN TITLE
+=========================== */
+
+#login-section h2{
+
+    text-align:center;
+
+    margin-bottom:25px;
+
+}
+/* ===========================
+        INPUT BOX
+=========================== */
+
+.input-box{
+
+    position:relative;
+
+    margin-bottom:20px;
+
+}
+
+.input-box input{
+
+    width:100%;
+
+    padding:15px 50px;
+
+    border:none;
+
+    outline:none;
+
+    border-radius:12px;
+
+    font-size:16px;
+
+}
+
+.input-box .fa-lock{
+
+    position:absolute;
+
+    left:18px;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    color:#777;
+
+}
+
+.eye-icon{
+
+    position:absolute;
+
+    right:18px;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    cursor:pointer;
+
+    color:#777;
+
+}
+
+
+/* ===========================
+          BUTTON
+=========================== */
+
+button{
+
+    width:100%;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    background:linear-gradient(135deg,#371283,#8d63ff);
+
+    color:white;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+button:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 10px 20px rgba(109,59,209,.4);
+
+}
+
+#login-message{
+
+    margin-top:15px;
+
+    text-align:center;
+
+    color:#FFD54F;
+
+}
+
+/* ===========================
+         DASHBOARD
+=========================== */
+
+#dashboard{
+
+    display:none;
+
+}
+
+.footer{
+
+    margin-top:30px;
+
+    text-align:center;
+
+    font-size:13px;
+
+    color:#d6d6d6;
+
+    border-top:1px solid rgba(255,255,255,.15);
+
+    padding-top:18px;
+
+}
+
+.footer strong{
+
+    color:white;
+
+}
+
+
+/* ===========================
+        RESPONSIVE
+=========================== */
+
+@media(max-width:500px){
+
+    .atm-card{
+
+        padding:22px;
+
+    }
+
+    .header h1{
+
+        font-size:28px;
+
+    }
+
+    .bank-icon{
+
+        font-size:42px;
+
+    }
+
+}
+/* ===========================
+        WELCOME SECTION
+=========================== */
+
+.welcome{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.welcome h2{
+    font-size:28px;
+    margin-bottom:5px;
+}
+
+.welcome p{
+    color:#d8d8d8;
+    font-size:15px;
+}
+
+/* ===========================
+        ACCOUNT CARD
+=========================== */
+
+.account-card{
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.15);
+    border-radius:18px;
+    padding:18px;
+    margin-bottom:20px;
+}
+
+.account-card h3,
+.account-card h4{
+    color:#FFD54F;
+    font-size:15px;
+    margin-bottom:5px;
+}
+
+.account-card p{
+    margin-bottom:12px;
+    font-size:16px;
+    color:white;
+}
+
+/* ===========================
+        BALANCE CARD
+=========================== */
+
+.balance-card{
+    background:linear-gradient(135deg,#6d3bd1,#8d63ff);
+    border-radius:20px;
+    padding:25px;
+    text-align:center;
+    margin-bottom:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+}
+
+.balance-card p{
+    font-size:16px;
+    margin-bottom:10px;
+    color:#f3f3f3;
+}
+
+.balance-card h1{
+    font-size:36px;
+    color:#FFD54F;
+}
+
+/* ===========================
+        AMOUNT INPUT
+=========================== */
+
+.amount-box{
+    margin-bottom:20px;
+}
+
+.amount-box input{
+    width:100%;
+    padding:15px;
+    border:none;
+    outline:none;
+    border-radius:12px;
+    font-size:16px;
+}
+
+/* ===========================
+        BUTTON GRID
+=========================== */
+
+.buttons{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:15px;
+    margin-bottom:20px;
+}
+
+.buttons button{
+    width:100%;
+}
+
+/* Logout Button */
+
+#logoutBtn{
+    grid-column:1/3;
+    background:linear-gradient(135deg,#d32f2f,#ff5252);
+}
+
+/* ===========================
+      HISTORY SECTION
+=========================== */
+
+#history{
+    background:rgba(255,255,255,.08);
+    border-radius:15px;
+    padding:18px;
+}
+
+#history h3{
+    margin-bottom:15px;
+    color:#FFD54F;
+}
+
+#history-list{
+    list-style:none;
+    max-height:180px;
+    overflow-y:auto;
+}
+
+#history-list li{
+    background:rgba(255,255,255,.06);
+    padding:12px;
+    border-radius:10px;
+    margin-bottom:10px;
+}
+
+/* ===========================
+        RESPONSIVE
+=========================== */
+
+@media(max-width:500px){
+
+    .buttons{
+        grid-template-columns:1fr;
+    }
+
+    #logoutBtn{
+        grid-column:auto;
+    }
+
+    .balance-card h1{
+        font-size:30px;
+    }
+
+}
+/* ===========================
+        ATM BANK CARD
+=========================== */
+
+.atm-bank-card{
+
+    background:linear-gradient(135deg,#2a1750,#6d3bd1);
+
+    border-radius:22px;
+
+    padding:22px;
+
+    margin-bottom:25px;
+
+    box-shadow:0 12px 25px rgba(0,0,0,.35);
+
+}
+
+.card-top{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+.card-top h3{
+
+    color:#FFD54F;
+
+    font-size:20px;
+
+}
+
+.card-top i{
+
+    font-size:28px;
+
+    color:white;
+
+}
+
+.card-chip{
+
+    margin:25px 0;
+
+}
+
+.card-chip i{
+
+    font-size:38px;
+
+    color:#FFD54F;
+
+}
+
+.card-number{
+
+    font-size:22px;
+
+    letter-spacing:3px;
+
+    margin-bottom:25px;
+
+    color:white;
+
+    font-weight:600;
+
+}
+
+.card-bottom{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+.card-bottom span{
+
+    font-size:12px;
+
+    color:#dddddd;
+
+}
+
+.card-bottom h4{
+
+    margin-top:5px;
+
+    color:white;
+
+}
